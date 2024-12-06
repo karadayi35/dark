@@ -8,25 +8,25 @@ function App() {
       name: "Bitcoin(BTC)",
       img: `${process.env.PUBLIC_URL}/images/bitcoin.png`,
       qr: `${process.env.PUBLIC_URL}/images/btc-qr.png`,
-      address: "364PQ1ZR9RiH7VcQzV7eanq3kz37ozmCDa",
+      address: "bc1qzwu9rdpmxhewxzse7r3dza6nz9pvpqv2whqcsl",
     },
     {
       name: "Ethereum(ETH)",
       img: `${process.env.PUBLIC_URL}/images/ethereum.png`,
       qr: `${process.env.PUBLIC_URL}/images/eth-qr.png`,
-      address: "0xd61dd310b29a7d50bc63e0fdaf3ec6b399ff6dbb",
+      address: "0xbc8819F6BDBcf1fEAb479DcB12E176F062Ec1A2D",
     },
     {
-      name: "Tron(TRX)",
+      name: "USDT(TRX)",
       img: `${process.env.PUBLIC_URL}/images/usdt.png`,
       qr: `${process.env.PUBLIC_URL}/images/usdt-qr.png`,
-      address: "TBgFRkoQrBSk4z5AC3gYNuyUtvZAwtsuK1",
+      address: "TTn1beVMgW19EL9j6uKo1xtqwQNNnvprre",
     },
     {
-      name: "Doge Coin",
+      name: "Litecoin(LTC)",
       img: `${process.env.PUBLIC_URL}/images/ltc.png`,
       qr: `${process.env.PUBLIC_URL}/images/ltc-qr.png`,
-      address: "DMADQNN9fY4j59bU45T2cwifwTvyik2E9Z",
+      address: "ltc1qms5vynesah6tlnt829353afrqktux5tvex5g8y",
     },
   ];
 
