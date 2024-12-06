@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+.page-ctr {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
+}
+
+.page-ctr .card {
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  overflow: hidden;
+  outline: none;
+  background-color: #292929;
+  border: none;
+  -webkit-box-shadow: 0px 2px 41px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 41px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 41px -6px rgba(0, 0, 0, 0.75);
+}
+
+.ch-logo {
+  width: 140px;
+}
+
+.page-ctr .card-header {
+  background-color: #292929;
+}
+
+/* DROPDOWN */
+
+div.dropdown {
+  position: relative;
+  width: 140px;
+}
+
+div.dropdown > div.caption {
+  background-color: #292929;
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 13px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+div.dropdown > div.caption img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+div.dropdown > div.list {
+  position: absolute;
+  background-color: #292929;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid #fff;
+  border-top: 0;
+  display: none; /* Default olarak kapalı */
+  font-size: 13px;
+  color: #fff;
+  z-index: 10; /* Dropdown'ın diğer elementlerin üstünde görünmesini sağlar */
+}
+
+.card-header {
+  border: none;
+}
+
+div.dropdown > div.list > div.item {
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.ch-sc {
+  border-top: 1px solid rgba(255, 255, 255, 0.127);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.127);
+}
+
+div.dropdown > div.list > div.item img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.pwith {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+div.dropdown > div.list > div.item.selected {
+  font-weight: bold;
+}
+
+div.dropdown > div.caption:hover,
+div.dropdown > div.list > div.item:hover {
+  background-color: rgb(83, 161, 214);
+  color: #fff;
+}
+
+div.dropdown.open > div.caption {
+  border-radius: 3px 3px 0 0;
+  border-bottom: solid 1px #999;
+}
+
+div.dropdown.open > div.list {
+  display: block; /* Açık durumu */
+}
+
+/* TABS */
+
+.card-ftr {
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+}
+
+.nav-tabs {
+  background-color: transparent;
+}
+
+.nav-tabs .nav-item {
+  width: 50%;
+  background-color: transparent;
+}
+
+.nav-link.active {
+  background-color: #333333 !important;
+  border-bottom: 2px solid rgb(0, 255, 0) !important;
+}
+
+.nav-tabs .nav-item .nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-bottom: 2px solid transparent;
+  outline: none !important;
+  background-color: #292929;
+}
+
+.tab-content {
+  height: 100%;
+  
+}
+
+.tab-pane {
+  display: flex;
+  height: 100%;
+  padding: 80px 0;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@media (min-width: 440px) {
+  .tab-pane {
+    height: 500px;
+    padding: 0;
+  }
+}
+
+.scan-img {
+  display: none; /* Default olarak kapalı */
+  width: 100%;
+  height: 100%;
+}
+
+.scan-img img {
+  width: 70%;
+}
+
+.scan-img.act {
+  display: flex; /* Aktif durumda göster */
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-pane-address {
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+  width: 100%; /* Genişliği kutunun tamamına yayar */
+  max-width: 90%; /* Genişlik ekranın %90'ını geçmesin */
+  text-align: center; /* Adresi ortalar */
+}
+
+.tpa-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Genişliği tam yapar */
+  overflow: visible; /* Taşma durumunda gizlemeyi kaldırır */
+}
+
+.tpa-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.tpa-title {
+  font-size: 10px;
+  margin-bottom: 8px;
+  color: rgba(0, 0, 0, 0.55);
+  letter-spacing: 2px;
+  
+}
+
+.amount {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.75);
+  
+}
+
+.tp-sc {
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+
+.key-txt {
+  border: none !important;
+  outline: none !important;
+  display: block;
+  font-size: 12px;
+  width: 100%; /* Genişliği kutuya sığacak şekilde ayarlar */
+  background-color: transparent;
+  color: black;
+  text-align: center; /* Metni ortalar */
+  white-space: nowrap; /* Metni tek satırda tutar */
+  font-weight: bold; /* Adres metnini kalın yapar */
+
+}
+
+.key-txt.act {
+  display: block; /* Aktif durumda göster */
+ 
+}
+
+.alert-success {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 13px;
+  display: none; /* Default olarak kapalı */
+  z-index: 1000; /* Alert her zaman görünür olsun */
+  
+}
+
+.copy-alert {
+  position: absolute;
+  top: -50px; /* Kutunun hemen üstünde görünmesi için */
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  animation: fadeInOut 2s ease-in-out;
+  
+}
+
+.copy-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px; /* İkon ile adres kutusu arasına boşluk ekler */
+}
+
+.copy-icon img {
+  width: 16px; /* İkon boyutu */
+  height: 16px;
+}
+
+.copy-icon:hover img {
+  filter: brightness(1.2); /* Hover durumunda ikon biraz parlak görünsün */
+}
+
+.timer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.timer-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+}
+
+.expired-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
